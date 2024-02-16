@@ -1,0 +1,49 @@
+#git 버젼 확인
+git --version
+*git 업데이트 명령어 : git update-git-for-windows
+
+
+#git 개인 구성하기 출처: https://yusang.tistory.com/26 [YS's develop story:티스토리]
+git config --global user.name "kuk6467"
+git config --global user.email "kuk6467@nate.com"
+
+
+#git 구성 확인
+ git config --list
+ 
+git config --global core.autocrlf true
+
+
+git remote add origin kuk6467@nate.com:kuk6467/test
+git push -u origin master
+
+# piplines 추가 출처 : https://learn.microsoft.com/ko-kr/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml#ci-triggers
+ 1. 파이프라인 YAML 검토
+        # Starter pipeline
+        # Start with a minimal pipeline that you can customize to build and deploy your code.
+        # Add steps that build, run tests, deploy, and more:
+        # https://aka.ms/yaml
+
+        trigger:
+        - main
+        - releases/*
+
+        pool:
+        name: default
+
+        steps:
+        - script: echo Hello, world!
+        displayName: 'Run a one-line script'
+
+        - script: |
+            echo Add other tasks to build, test, and deploy your project.
+            echo See https://aka.ms/yaml
+        displayName: 'Run a multi-line script'
+
+
+
+# 우선 git hub 마켓플레이스에서 하단 스크롤 하고  Pricing and setup 의  Install it for free를 클릭
+https://zerobig-k8s.tistory.com/95
+
+
+# 
