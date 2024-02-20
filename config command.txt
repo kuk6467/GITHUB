@@ -11,7 +11,7 @@ git --version
 #git 개인 구성하기 출처: https://yusang.tistory.com/26 [YS's develop story:티스토리]
 git config --global user.name "kuk6467"
 git config --global user.email "kuk6467@nate.com"
-
+ git config --global --add safe.directory C:/Users/sha2.kim/Code/ASP.NET
 
 #git 구성 확인
  git config --list
@@ -45,7 +45,7 @@ git push -u origin master
             echo See https://aka.ms/yaml
         displayName: 'Run a multi-line script'
 
-
+dd
 
 # 우선 git hub 마켓플레이스에서 하단 스크롤 하고  Pricing and setup 의  Install it for free를 클릭
 https://zerobig-k8s.tistory.com/95
