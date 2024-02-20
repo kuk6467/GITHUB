@@ -133,3 +133,20 @@ https://zerobig-k8s.tistory.com/95
 
 #git hub 연결을 위한 tokens 발급
 프로젝트 설정 > pipeline > 서비스 연결
+ - 발급 키 : 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
+
+ # https://oneday0012.tistory.com/272 따라해보기
+
+ # yaml ? 야, 근데 YAML이 뭐냐?
+좀 더 경량화 된 json?읽을 때는 '야믈' 또는 '야멜' 정도로 발음합니다. ('야믈' > '야멜' 인듯?)
+
+YAML(Yet Another Markup Language)
+사용하여 빌드 및 릴리스 파이프 라인을 정의하는 것을 선호한다. 
+이를 통해 비주얼 디자이너를 사용하는 것과 동일한 파이프라인 기능에 
+액세스 할 수 있지만 다른 소스 파일처럼 관리 가능한 마크 업 파일을 
+사용할 수 있다. 
+단순히 소스 파일을 리포지토리의 루트에 추가하는 것만으로 
+YAML 빌드 정의를 프로젝트에 추가 할 수 있다. 
+또한 Azure DevOps는 인기있는 프로젝트 유형에 대한 
+기본 템플릿을 제공하며 YAML 디자이너를 제공하여 빌드 
+및 릴리스 태스크 정의 프로세스를 단순화 한다.
