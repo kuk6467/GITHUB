@@ -1,0 +1,45 @@
+﻿@model SECSSO.ADFS.Site.Models.LoginUserModel
+
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Login</title>
+
+	<link href="~/Content/style.css" rel="stylesheet" type="text/css" />
+	<link href="~/Content/grid.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	@using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post))
+	{
+		<div>
+			<ul>
+				<li class="logo_portal"><a href="#"></a></li>
+			</ul>
+		</div>
+
+		<div id="wrapper_portal">
+			<div id="login_container">
+				<div class="login_form">
+					<h2>Login</h2>
+					<fieldset>
+						<dl>
+							<dt>ID</dt>
+							<dd>@Html.TextBoxFor(Model => Model.Id, new { style = "width:100%", placeholder = "ID", autofocus = "", required = "" })</dd>
+							<dt>Password</dt>
+							<dd>@Html.TextBoxFor(Model => Model.UserPassword, new { style = "width:100%", placeholder = "Password", required = "", type = "password" })</dd>
+						</dl>
+						<button class="button" style="width:100%">Login</button>
+					</fieldset>
+				</div>
+				<footer><p>&copy; SAMSUNG</p></footer>
+			</div>
+		</div>
+	}
+</body>
+</html>

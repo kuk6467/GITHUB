@@ -1,0 +1,6 @@
+D:\Source\Sample\SECSSO.ADFS.SAML.Sample\SECSSO.ADFS\bin\Debug\SECSSO.ADFS.dll
+D:\Source\Sample\SECSSO.ADFS.SAML.Sample\SECSSO.ADFS\bin\Debug\SECSSO.ADFS.pdb
+D:\Source\Sample\SECSSO.ADFS.SAML.Sample\SECSSO.ADFS\obj\Debug\SECSSO.ADFS.csproj.CoreCompileInputs.cache
+D:\Source\Sample\SECSSO.ADFS.SAML.Sample\SECSSO.ADFS\obj\Debug\SECSSO.ADFS.dll
+D:\Source\Sample\SECSSO.ADFS.SAML.Sample\SECSSO.ADFS\obj\Debug\SECSSO.ADFS.pdb
+D:\Source\Sample\SECSSO.ADFS.SAML.Sample\SECSSO.ADFS\obj\Debug\SECSSO.ADFS.csprojAssemblyReference.cache

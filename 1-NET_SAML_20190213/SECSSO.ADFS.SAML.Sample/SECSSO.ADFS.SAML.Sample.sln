@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SECSSO.ADFS", "SECSSO.ADFS\SECSSO.ADFS.csproj", "{CBBA53CA-5F1C-4914-A39A-0D3476794B4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SECSSO.ADFS.Site", "SECSSO.ADFS.Site\SECSSO.ADFS.Site.csproj", "{B61E6B4E-6FF9-4AB2-85F2-7B6738C08668}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBBA53CA-5F1C-4914-A39A-0D3476794B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBBA53CA-5F1C-4914-A39A-0D3476794B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBBA53CA-5F1C-4914-A39A-0D3476794B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBBA53CA-5F1C-4914-A39A-0D3476794B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B61E6B4E-6FF9-4AB2-85F2-7B6738C08668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B61E6B4E-6FF9-4AB2-85F2-7B6738C08668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B61E6B4E-6FF9-4AB2-85F2-7B6738C08668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B61E6B4E-6FF9-4AB2-85F2-7B6738C08668}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63DC2E52-C6BF-466A-93FB-4B5F23910B25}
+	EndGlobalSection
+EndGlobal

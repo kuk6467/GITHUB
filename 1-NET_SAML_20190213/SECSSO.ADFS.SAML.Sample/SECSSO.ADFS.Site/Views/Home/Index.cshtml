@@ -1,0 +1,84 @@
+﻿@model List<SECSSO.ADFS.ADFSClaimModel>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Portal</title>
+
+	<link href="~/Content/style.css" rel="stylesheet" type="text/css" />
+	<link href="~/Content/grid.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+		// Logout
+		function jsLogout() {
+			try {
+				if (confirm("Do you want to logout?")) {
+					document.location.href = "/Account/ADFSLogout";
+				}
+			}
+			catch (exception) {
+				alert(exception.description);
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="wrapper_portal">
+		<div class="header_portal">
+			<ul>
+				<li class="logo_portal"><a href="#"></a></li>
+				<li class="user_info" style="float:right;">
+					@ViewBag.LoginUserName
+					<span></span>
+					<a style="cursor:pointer;" onclick="jsLogout();">Logout</a>
+				</li>
+			</ul>
+		</div>
+		<div id="wrapper_system">
+			<div class="topnav_system">
+				<ul>
+					<li class="name_system"><a>ADFS Sample Site</a></li>
+					<li><a href="#">Menu1</a></li>
+					<li><a href="#">Menu2</a></li>
+					<li><a href="#">Menu3</a></li>
+				</ul>
+			</div>
+			<div class="wrapper_content">
+				@if (Model != null && Model.Count > 0)
+				{
+					<h1>ADFS Claim List</h1>
+					<div class="panel_box no_padding top_15">
+						<table class="tbl_list">
+							<colgroup>
+								<col width="70%">
+								<col width="">
+							</colgroup>
+							<thead>
+								<tr>
+									<th class="center">Claim Key</th>
+									<th class="center">Claim Value</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (SECSSO.ADFS.ADFSClaimModel m in Model)
+								{
+								<tr>
+									<td>@m.ClaimKey</td>
+									<td>@m.ClaimValue</td>
+								</tr>
+								}
+							</tbody>
+						</table>
+					</div>
+				}
+			</div>
+		</div>
+
+		<div id="footer">Samsung Electronics, 129, Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do, Korea (PostalCode 16677) (Tel : 02-2255-0114, Fax : 02-2255-0117)</div>
+	</div>
+</body>
+</html>
