@@ -1,8 +1,3 @@
-- task: GitHubComment@0
-  inputs:
-    gitHubConnection: 'pipeline_configration'
-    repositoryName: 'https://github.com/kuk6467/GITHUB.git'
-    
 - trigger:
   branches:
     include:
@@ -10,3 +5,9 @@
     - releases/*
     exclude:
     - releases/old*
+
+- task: GitHubComment@0
+  inputs:
+    gitHubConnection: 'pipeline_configration'
+    repositoryName: 'https://github.com/kuk6467/GITHUB.git'
+
