@@ -5,9 +5,10 @@
     - releases/*
     exclude:
     - releases/old*
-
 - task: GitHubComment@0
   inputs:
     gitHubConnection: 'pipeline_configration'
+    repositoryName: 'pipeline_configration'
+    id: 'kuk6467'
+    comment: 'test'
     repositoryName: 'https://github.com/kuk6467/GITHUB.git'
-
