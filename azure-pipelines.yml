@@ -2,8 +2,8 @@
   inputs:
     gitHubConnection: 'pipeline_configration'
     repositoryName: 'https://github.com/kuk6467/GITHUB.git'
-
-trigger:
+    
+- trigger:
   branches:
     include:
     - main
